@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		906EEEB2286997AB00E487D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906EEEB1286997AB00E487D3 /* main.cpp */; };
+		906EEEBE28699C6400E487D3 /* ExpGolomb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906EEEBC28699C6400E487D3 /* ExpGolomb.cpp */; };
+		906EEEC3286A9CC600E487D3 /* FileStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906EEEC1286A9CC600E487D3 /* FileStream.cpp */; };
+		906EEEC6286B006600E487D3 /* NALUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906EEEC4286B006600E487D3 /* NALUnit.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		906EEEAC286997AB00E487D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		906EEEAE286997AB00E487D3 /* H264Coder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = H264Coder; sourceTree = BUILT_PRODUCTS_DIR; };
+		906EEEB1286997AB00E487D3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		906EEEBC28699C6400E487D3 /* ExpGolomb.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExpGolomb.cpp; sourceTree = "<group>"; };
+		906EEEBD28699C6400E487D3 /* ExpGolomb.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExpGolomb.hpp; sourceTree = "<group>"; };
+		906EEEC1286A9CC600E487D3 /* FileStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileStream.cpp; sourceTree = "<group>"; };
+		906EEEC2286A9CC600E487D3 /* FileStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileStream.hpp; sourceTree = "<group>"; };
+		906EEEC4286B006600E487D3 /* NALUnit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NALUnit.cpp; sourceTree = "<group>"; };
+		906EEEC5286B006600E487D3 /* NALUnit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NALUnit.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		906EEEAB286997AB00E487D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		906EEEA5286997AB00E487D3 = {
+			isa = PBXGroup;
+			children = (
+				906EEEB0286997AB00E487D3 /* H264Coder */,
+				906EEEAF286997AB00E487D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		906EEEAF286997AB00E487D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				906EEEAE286997AB00E487D3 /* H264Coder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		906EEEB0286997AB00E487D3 /* H264Coder */ = {
+			isa = PBXGroup;
+			children = (
+				906EEEC0286A9C9D00E487D3 /* Stream */,
+				906EEEB8286997B500E487D3 /* 熵编码算法 */,
+				906EEEBF286A9C6100E487D3 /* NAL */,
+				906EEEB1286997AB00E487D3 /* main.cpp */,
+			);
+			path = H264Coder;
+			sourceTree = "<group>";
+		};
+		906EEEB8286997B500E487D3 /* 熵编码算法 */ = {
+			isa = PBXGroup;
+			children = (
+				906EEEBC28699C6400E487D3 /* ExpGolomb.cpp */,
+				906EEEBD28699C6400E487D3 /* ExpGolomb.hpp */,
+			);
+			path = "熵编码算法";
+			sourceTree = "<group>";
+		};
+		906EEEBF286A9C6100E487D3 /* NAL */ = {
+			isa = PBXGroup;
+			children = (
+				906EEEC4286B006600E487D3 /* NALUnit.cpp */,
+				906EEEC5286B006600E487D3 /* NALUnit.hpp */,
+			);
+			path = NAL;
+			sourceTree = "<group>";
+		};
+		906EEEC0286A9C9D00E487D3 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				906EEEC1286A9CC600E487D3 /* FileStream.cpp */,
+				906EEEC2286A9CC600E487D3 /* FileStream.hpp */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		906EEEAD286997AB00E487D3 /* H264Coder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 906EEEB5286997AB00E487D3 /* Build configuration list for PBXNativeTarget "H264Coder" */;
+			buildPhases = (
+				906EEEAA286997AB00E487D3 /* Sources */,
+				906EEEAB286997AB00E487D3 /* Frameworks */,
+				906EEEAC286997AB00E487D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H264Coder;
+			productName = H264Coder;
+			productReference = 906EEEAE286997AB00E487D3 /* H264Coder */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		906EEEA6286997AB00E487D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					906EEEAD286997AB00E487D3 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 906EEEA9286997AB00E487D3 /* Build configuration list for PBXProject "H264Coder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 906EEEA5286997AB00E487D3;
+			productRefGroup = 906EEEAF286997AB00E487D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				906EEEAD286997AB00E487D3 /* H264Coder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		906EEEAA286997AB00E487D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906EEEB2286997AB00E487D3 /* main.cpp in Sources */,
+				906EEEC3286A9CC600E487D3 /* FileStream.cpp in Sources */,
+				906EEEBE28699C6400E487D3 /* ExpGolomb.cpp in Sources */,
+				906EEEC6286B006600E487D3 /* NALUnit.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		906EEEB3286997AB00E487D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		906EEEB4286997AB00E487D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		906EEEB6286997AB00E487D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY7LMS5KN7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		906EEEB7286997AB00E487D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RY7LMS5KN7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		906EEEA9286997AB00E487D3 /* Build configuration list for PBXProject "H264Coder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906EEEB3286997AB00E487D3 /* Debug */,
+				906EEEB4286997AB00E487D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		906EEEB5286997AB00E487D3 /* Build configuration list for PBXNativeTarget "H264Coder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906EEEB6286997AB00E487D3 /* Debug */,
+				906EEEB7286997AB00E487D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 906EEEA6286997AB00E487D3 /* Project object */;
+}
